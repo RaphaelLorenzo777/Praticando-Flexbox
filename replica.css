@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+ 
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem;
+}
+ 
+.header-buttons {
+    display: flex;
+    flex: 1;
+    justify-content:space-evenly;
+}
+ 
+.header-buttons button {
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: #fff;
+    font-weight: bold;
+    font-size:medium;
+    cursor: pointer;
+}
+ 
+.header-img {
+    height: 60px;
+    width: auto;
+    margin: 0 1rem;
+}
+ 
+.main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+ 
+.background-image {
+    position:relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+ 
+.background-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+}
+ 
+.overlay {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 60%;
+}
+ 
+.container-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #000;
+    border: 1px solid #fff;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+}
+ 
+.container-box h2 {
+    margin-bottom: 1rem;
+    color: #ff6f00;
+    font-size: 40px;
+}
+.container-box h3 {
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+ 
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+}
+ 
+.box {
+    background: #000;
+    border: 1px solid #fff;
+    padding: 1rem;
+    text-align: center;
+    flex: 1;
+}
+ 
+.box1, .box2, .box3 {
+    min-width: 200px;
+}
+ 
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    z-index: 10;
+}
